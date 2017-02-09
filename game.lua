@@ -4,7 +4,7 @@ physics.start()
 physics.setGravity( 0, 0 )
 
 -- Configure image sheet
-local options =
+local sheetOptions =
 {
     frames =
     {
@@ -40,7 +40,7 @@ local options =
         },
     }
 }
-local objectSheet = graphics.newImageSheet( "gameObjects.png", options )
+local objectSheet = graphics.newImageSheet( "gameObjects.png", sheetOptions )
 
 -- Initialize variables
 local lives = 3
@@ -211,7 +211,7 @@ local function onCollision( event )
 		then
 			-- Remove both the laser and asteroid
 			display.remove( obj1 )
-            display.remove( obj2 )
+            		display.remove( obj2 )
 
 			for i = #asteroidsTable, 1, -1 do
 				if ( asteroidsTable[i] == obj1 or asteroidsTable[i] == obj2 ) then
