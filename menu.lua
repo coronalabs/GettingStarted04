@@ -6,8 +6,6 @@ local scene = composer.newScene()
 -- -----------------------------------------------------------------------------------
 -- Code outside of the scene event functions below will only be executed ONCE unless
 -- the scene is removed entirely (not recycled) via "composer.removeScene()"
--- This is a good place to put variables and functions that need to be available scene
--- wide.
 -- -----------------------------------------------------------------------------------
 
 local function gotoGame()
