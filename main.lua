@@ -6,7 +6,7 @@
 
 local composer = require( "composer" )
 
--- Hide the status bar
+-- Hide status bar
 display.setStatusBar( display.HiddenStatusBar )
 
 -- Seed the random number generator
